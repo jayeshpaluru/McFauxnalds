@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>McFauxnald's - Unappetizing Menu</title>
+       <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+       <style>
+           * {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+           }
+           body {
+               font-family: 'Poppins', sans-serif;
+               background-color: #f7f7f7;
+           }
+           .container {
+               max-width: 1200px;
+               margin: 0 auto;
+           }
+           header {
+               background-color: #ffbc00;
+               padding: 20px 0;
+           }
+           nav {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+           }
+           nav a {
+               color: #fff;
+               font-size: 18px;
+               font-weight: 700;
+               margin-right: 30px;
+               text-decoration: none;
+           }
+           nav a:last-child {
+               margin-right: 0;
+           }
+           .menu-title {
+               text-align: center;
+               margin: 40px 0;
+           }
+           .menu-title h1 {
+               font-size: 60px;
+               margin-bottom: 20px;
+           }
+           .menu-grid {
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+               grid-gap: 20px;
+               padding: 0 20px;
+           }
+           .menu-item {
+               background-color: #fff;
+               border: 1px solid #ddd;
+               border-radius: 5px;
+               padding: 20px;
+               text-align: center;
+           }
+           .menu-item img {
+               width: 100%;
+               height: auto;
+               margin-bottom: 20px;
+           }
+           .menu-item h3 {
+               font-size: 24px;
+               margin-bottom: 10px;
+           }
+           .menu-item p {
+               font-size: 16px;
+               margin-bottom: 10px;
+           }
+           .btn {
+               background-color: #ffbc00;
+               color: #fff;
+               font-size: 16px;
+               font-weight: 700;
+               padding: 8px 16px;
+               text-decoration: none;
+               border-radius: 5px;
+           }
+           .btn:hover {
+               background-color: #ff9f00;
+               transition: background-color 0.3s;
+           }
+           footer {
+               background-color: #1a1a1a;
+               color: #fff;
+               padding: 40px 0;
+               text-align: center;
+           }
+       </style>
+   </head>
+   <body>
+       <header>
+           <div class="container">
+               <nav>
+                   <a href="index.html"><i class="fas fa-hamburger"></i> McFauxnald's</a>
+                   <a href="index.html">Home</a>
+                   <a href="menu.html">Menu</a>
+                   <a href="locations.html">Locations</a>
+                   <a href="contact.html">Contact</a>
+               </nav>
+           </div>
+       </header>
+       <section class="menu-title">
+           <div class="container">
+               <h1>Unappetizing Menu</h1>
+            </div>
+        </section>
+        <section class="menu-grid">
+            <div class="container">
+                <div class="menu-item">
+                    <img src="https://static-prod.adweek.com/wp-content/uploads/2017/09/burger-king-mystery-burger-hed-2017.jpg" alt="Mystery Burger">
+                    <h3>Mystery Burger</h3>
+                    <p>Who knows what's inside? Even we don't!</p>
+                    <a href="order.html" class="btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-225157209bccb71cc29b1a15166300c2-lq" alt="Soggy Fries">
+                    <h3>Soggy Fries</h3>
+                    <p>Limp and lifeless, just like your appetite after seeing them.</p>
+                    <a href="order.html" class="btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="https://img.wonderhowto.com/img/96/42/63500584435385/0/tired-flat-soda-use-trick-keep-two-liter-bottles-soda-fizzy-longer.w1456.jpg" alt="Flat Soda">
+                    <h3>Flat Soda</h3>
+                    <p>All the sugar, none of the fizz!</p>
+                    <a href="order.html" class="btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="data:image/jpeg;base64,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" alt="Frozen Salad">
+                    <h3>Frozen Salad</h3>
+                    <p>Iceberg lettuce taken a little too literally.</p>
+                    <a href="order.html" class="btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="https://cdn.vox-cdn.com/thumbor/ouXRRyaLbxYu406LC4gP6YYD4SE=/0x0:1600x862/1200x675/filters:focal(672x322:928x578)/cdn.vox-cdn.com/uploads/chorus_image/image/71028469/Fried_Chicken_Best_Nugget_Shapes_Lead.0.png" alt="Questionable Nuggets">
+                    <h3>Questionable Nuggets</h3>
+                    <p>What's in them? It's better if you don't ask...</p>
+                    <a href="order.html" class="btn">Order Now</a>
+                </div>
+                <div class="menu-item">
+                    <img src="https://i.ytimg.com/vi/hA4t51PC0oU/maxresdefault.jpg" alt="Expired Apple Pie">
+                    <h3>Expired Apple Pie</h3>
+                    <p>Our pies have seen better days, just like our reputation.</p>
+                    <a href="order.html" class="btn">Order Now</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 McFauxnald's. All Rights Reversed. | <a href="#" style="color: #ffbc00;">Privacy Policy</a></p>
+           </div>
+        </footer>
+        <!-- Add necessary scripts for responsiveness and interactivity -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Add any custom scripts or functionalities as needed
+        </script>
+        </body>
+        </html>
